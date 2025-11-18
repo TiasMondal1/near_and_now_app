@@ -70,3 +70,4 @@ The app uses the same Supabase backend as the web application. Make sure your Su
 Same as the main project.
 
 
+

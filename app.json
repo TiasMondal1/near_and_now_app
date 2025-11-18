@@ -1,11 +1,14 @@
 {
   "expo": {
     "name": "Near & Now",
-    "slug": "nearandnowapp",
+    "slug": "near-and-now",
     "version": "1.0.0",
     "orientation": "portrait",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
       "backgroundColor": "#059669"
     },
     "assetBundlePatterns": [
@@ -13,33 +16,27 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.nearandnow.app",
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
-      }
+      "bundleIdentifier": "com.nearandnow.app"
     },
     "android": {
       "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#059669"
       },
       "package": "com.nearandnow.app",
       "permissions": [
         "ACCESS_FINE_LOCATION",
-        "ACCESS_COARSE_LOCATION",
-        "android.permission.ACCESS_COARSE_LOCATION",
-        "android.permission.ACCESS_FINE_LOCATION"
+        "ACCESS_COARSE_LOCATION"
       ]
     },
-    "web": {},
-    "plugins": [
-      "expo-location",
-      "expo-font"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "5fe1d767-145a-4730-ad2b-17841ade2168"
-      }
+    "web": {
+      "favicon": "./assets/favicon.png"
     },
-    "owner": "tiasmondal166"
+    "plugins": [
+      "expo-location"
+    ]
   }
 }
+
+
+
